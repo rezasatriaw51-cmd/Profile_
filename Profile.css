@@ -1,3 +1,6 @@
+/* =========================
+   RESET & FONT
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +8,9 @@
     font-family: Arial, sans-serif;
 }
 
-/* Background halaman */
+/* =========================
+   BODY
+========================= */
 body {
     background-color: #e9eef3;
     display: flex;
@@ -14,50 +19,59 @@ body {
     min-height: 100vh;
 }
 
-/* Container utama */
+/* =========================
+   CONTAINER
+========================= */
 .container {
     width: 100%;
-    max-width: 420px;
+    max-width: 800px;
     padding: 20px;
 }
 
-/* Card profil */
+/* =========================
+   CARD
+========================= */
 .card {
     background: #ffffff;
     padding: 30px 25px;
     border-radius: 18px;
-    text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Foto profil */
+/* =========================
+   PROFILE SECTION
+========================= */
 .profile-img {
+    display: block;
     width: 150px;
     height: 150px;
+    margin: 0 auto 15px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
     border: 4px solid #007bff;
-    margin-bottom: 15px;
 }
 
-/* Nama */
 .name {
+    text-align: center;
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 6px;
     color: #222;
 }
 
-/* Pekerjaan */
 .job {
+    text-align: center;
     font-size: 15px;
     color: #666;
     margin-bottom: 20px;
 }
 
-/* Tentang saya */
-.about h3 {
+/* =========================
+   ABOUT & INFO
+========================= */
+.about h3,
+.content h3 {
     font-size: 20px;
     margin-bottom: 8px;
     color: #333;
@@ -68,18 +82,21 @@ body {
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
-/* Informasi */
 .info p {
     font-size: 14px;
     color: #333;
     margin-bottom: 6px;
 }
 
-/* Tombol sosial */
+/* =========================
+   BUTTONS
+========================= */
 .social {
-    margin-top: 18px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .btn {
@@ -97,4 +114,91 @@ body {
 .btn:hover {
     background: #005fcc;
     transform: translateY(-2px);
+}
+
+/* =========================
+   PROJECT PAGE
+========================= */
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.content {
+    text-align: left;
+}
+
+.content p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.content ul {
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.content li {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+h4 {
+    margin: 15px 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* =========================
+   TABLE (DATA-INK RATIO)
+========================= */
+.design-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0 25px;
+    font-size: 14px;
+}
+
+.design-table th,
+.design-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.design-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.design-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
 }
